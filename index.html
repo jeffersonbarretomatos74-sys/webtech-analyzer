@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>WebTech Analyzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>WebTech Analyzer 🚀</h1>
+
+  <p>Digite uma URL para analisar:</p>
+
+  <input type="text" id="url" placeholder="https://exemplo.com" style="width:100%;padding:10px;">
+  <br><br>
+  <button onclick="analisar()">Analisar</button>
+
+  <pre id="resultado"></pre>
+
+  <script>
+    function analisar() {
+      const url = document.getElementById("url").value;
+      if (!url) {
+        alert("Digite uma URL");
+        return;
+      }
+      document.getElementById("resultado").textContent =
+        "URL digitada: " + url + "\n\n(Análise virá aqui depois)";
+    }
+  </script>
+</body>
+</html>
